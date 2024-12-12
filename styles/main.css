@@ -1,0 +1,58 @@
+/* reset CSS */
+
+* {
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header a {
+    color: #fff;
+}
+
+header a:hover {
+    opacity: .6;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+main section {
+    text-align: center;
+    padding: 20px;
+}
+
+section * {
+    padding-bottom: 10px;
+}
+
+/*Characters list styles*/
+.container-characters {
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+.character-card {
+    background-color: rgb(249, 255, 297);
+    border-radius: 20px;
+    padding: 20px;
+}
+.character-card *:not(:last-child) {
+    padding: 10px;
+}
+.character-card img {
+    width: 100%;
+}
